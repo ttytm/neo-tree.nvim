@@ -189,7 +189,7 @@ M.buffer_enter_event = function()
     return
   end
 
-  if last_buffer_enter_filetype == "neo-tree" then
+  --[[ if last_buffer_enter_filetype == "neo-tree" then
     events.fire_event(events.NEO_TREE_BUFFER_LEAVE)
   end
   if last_buffer_enter_filetype == "neo-tree-popup" then
@@ -258,7 +258,7 @@ M.buffer_enter_event = function()
       }
       utils.open_file(fake_state, bufname)
     end)
-  end
+  end ]]
 end
 
 M.win_enter_event = function()
